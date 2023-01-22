@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RURAL TECHISE LOGIN PAGE</title>
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px ;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    input[type="text"],input[type="password"]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+    button{
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border:none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #4ca049;
+    }
+    img{
+        border-radius: 50%;
+        vertical-align: middle;
+        width: 200px;
+        height:200px;
+    }
+</style>
+</head>
+<body>
+    <form>
+    <h1>Auto_Botz</h1>
+    <img src="./images/Rural tecies.png" style="width: 150px;">
+        <h2>LOGIN</h2>
+        <label for="username">USERNAME:</label>
+        <input type="text" id="username" name="username"required>
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" name="password"required>
+        <button type="button" onclick="login()">LOGIN..</button>
+    <h1>Hello Fellows...........</h1>
+
+    </form>
+
+    <script>
+        function login(){
+        var username =
+        document.getElementById("username").value;
+        var password =
+        document.getElementById("password").value;
+        if(username =="Rural" && password == "sevi") {
+            alert("login successfully Rural techise...................");
+            SubmitEvent("hhh")
+            
+        }
+        else{
+            alert("invalid password  ........");
+            window.location.href = "dashboard.html";
+
+        }
+    }
+         </script>
+         <h2>rural developers</h2>
+    
+</body>
+</html>
